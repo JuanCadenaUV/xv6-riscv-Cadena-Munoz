@@ -10,6 +10,9 @@ ii.El identificador del commit del código fuente desde el cual ustedes comienza
 Fork: https://github.com/JuanCadenaUV/xv6-riscv-Cadena-Munoz
 Commit de partida: fa2ddcb7ca87a77af579380a6eafd5aff163b44f
 
+![Descripción del WSL donde se trabaja](imagesMd/versionWsl.png)
+![Aquí se muestra la clonación del repositorio](imagesMd/creacionCarpeta.png)
+
 ### 2.
 
 Los comando que se presentarán a continuación son ejecutados desde WSL/Ubuntu:
@@ -38,14 +41,12 @@ Además, para detectar el compilador cruzado:
 
 grep -n "TOOLPREFIX" Makefile | head
 
-*Imagen 1*
+![Se muestra la versión de las herramientas instaladas](imagesMd/versionesHerramientas.png)
 
 ## 2. Compilación y ejecutar XV6.
 ### 1. Compilen el código fuente del sistema operativo, ejecútenlo y utilicen algunos comandos, por ejemplo, ls y cat.
 
-*Imagen 2*
-
-*Colocar descripción*
+![Se observa las versiones de RISC-V y la ejecución del make qemu](imagesMd/ejecucionXv6.png)
 
 ### 2. Configuren la ejecución del sistema operativo XV6 para que utilice una sola CPU virtual en qemu.
 
@@ -61,7 +62,7 @@ xv6 kernel is booting
 *hart 2 starting*
 init: starting sh
 
-*Imagen 3*
+![Se observa las versiones de RISC-V y la ejecución del make qemu](imagesMd/ejecucionXv6.png)
 
 ii.En su informe indiquen el comando o el ajuste de configuración que utilizaron y presentenevidencia de que el sistema operativo XV6 se está ejecutando con una sola CPU virtual.
 
@@ -69,7 +70,7 @@ El comando que utilizamos fue:
 
 make qemu CPUS=1
 
-*Imagen 4*
+![Utilización del comando](imagesMd/prueba1.png)
 
 Nos fijamos y al arrancar aparece "-smp 1" y no aparecen las lineas hart 1 starting ni hart 2 startin.
 Por eso, al momento de escribir "CPUS=1" en la línea de comandos, make define esa variable antes de leer el Makefile.
