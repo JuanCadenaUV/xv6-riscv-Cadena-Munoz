@@ -1,3 +1,8 @@
+##Integrantes:
+
+Juan Manuel Cadena código 2539361
+Deiner Muñoz código 2257728
+
 # Exploración de la planificación de procesos en XV6
 ## 1. Preparación del repositorio.
 ### 1.
